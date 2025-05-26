@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property Street</title>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-logo" href="/">
+        <img src="logo1.png" class="logo" alt="Logo">
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="navbar-menu desktop-menu">
+        <div class="search-wrapper">
+          <button class="search-btn" onclick="open_search_pop_up()">
+            <i class="fa fa-search"></i> Search
+          </button>
+        </div>
+        <li><a href="/project">Project</a></li>
+        <li><a href="/inventory-page">Inventory</a></li>
+        <li><a href="/comparation">Comparison</a></li>
+        <li><a href="/login"><img src="profile-circle.png" alt="" style="width:20px;"> Log In</a></li>
+        <li>
+          <a class="post-property-btn" href="/builder-register">
+            Post Property <span class="free-tag">Free</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="menu-toggle" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="navbar-menu mobile-menu" id="mobileMenu">
+      <li><a href="/project">Project</a></li>
+      <li><a href="/inventory-page">Inventory</a></li>
+      <li><a href="/comparation">Comparison</a></li>
+      <li class="line"> </li>
+      <li><a href="/login"><img src="profile-circle.png" alt="" style="width:20px;"> Log In</a></li>
+      <li>
+        <a class="post-property-btn" href="/builder-register">
+          Post Property <span class="free-tag">Free</span>
+        </a>
+      </li>
+    </ul> 
+  </header>
+
+  <!-- Home Banner -->
+  <div class="home-banner">
+    <!-- Banner Text -->
+    <div class="home-banner-text">
+      <h1>Walk on the streets of Real <br>Estate Encyclopedia</h1>
+      <p>Suscipit cupiditate dolorem est distinctio voluptatem a dolor</p>
+    </div>
+
+    <!-- Search Block as Main Container -->
+    <div class="search-banner-outer">
+      <div class="search-block">
+
+        <div class="place-horizontal">
+          <input type="text" placeholder="Select Location">
+          <i class="fa fa-search"></i>
+        </div>
+
+        <div class="sqft-divider"></div>
+
+        <input type="text" placeholder="From Sqft">
+        <div class="center-divider"></div>
+
+        <input type="text" placeholder="To Sqft">
+        <div class="sqft-divider"></div>
+        <div class="project-type">
+
+          <div class="place-horizontal">
+            <input type="text" placeholder="Select Project Type">
+            <i class="fa fa-chevron-down"></i>
+          </div>
+
+          <div class="project-dropdown">
+            <p>Voora Beckford - Chennai, India</p>
+          </div>
+        </div>
+
+        <div class="last-search-button">
+        <button class="search-btn-1">
+          <i class="fa fa-search"></i> Search
+        </button>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsor Section -->
+    <div class="sponsor-block">
+      <img src="Sponsor.png" alt="Sponsor" class="sponsor-img"/>
+    </div>
+    <!-- Mostly Viewed Projects Section -->
+    <section class="most-viewed-section">
+      <h2 class="section-title">Mostly Viewed Projects</h2>
+      <div class="project-cards-container">
+        <!-- Project Card -->
+        <div class="project-card">
+          <img src="Voora Beckford.jpeg" alt="Voora Beckford" class="project-image">
+          <div class="project-details">
+            <h3 class="project-name">Voora Beckford</h3>
+            <div class="project-location">
+              <span class="location">Location</span>
+              <span class="colon">:</span>
+              <span>Chennai, India</span>
+            </div>
+            <div class="project-price">
+              <span class="price">$1500</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-book">Book</button>
+              <button class="btn-site-visit">Site Visit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy and change below two as needed -->
+        <div class="project-card">
+          <img src="Voora Beckford.jpeg" alt="Project 2" class="project-image">
+          <div class="project-details">
+            <h3 class="project-name">Voora Beckford</h3>
+            <div class="project-location">
+              <span class="location">Location</span>
+              <span class="colon">:</span>
+              <span>Chennai, India</span>
+            </div>
+            <div class="project-price">
+              <span class="price">$1500</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-book">Book</button>
+              <button class="btn-site-visit">Site Visit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Voora Beckford.jpeg" alt="Project 3" class="project-image">
+          <div class="project-details">
+            <h3 class="project-name">Voora Beckford</h3>
+            <div class="project-location">
+              <span  class="location">Location</span>
+              <span class="colon">:</span>
+              <span>Chennai, India</span>
+            </div>
+            <div class="project-price">
+              <span class="price">$1500</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-book">Book</button>
+              <button class="btn-site-visit">Site Visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="description-contanier">
+      <div class="description search-simply">
+        <img src="search-icon.png" alt="icon 1" class="description-image search-image">
+        <h3 class="description-name">Search Simply</h3>
+        <h4 class="description-about">Suscipit cupiditate dolorem est distinctio</h4> 
+        <h4 class="description-about">voltatem ipsum.</h4>
+      </div>
+      <div class="description compare-confidently">
+        <img src="website.png" alt="icon 1" class="description-image compare-confidently-image">
+        <h3 class="description-name">Compare-Confidently</h3>
+        <h4 class="description-about">Suscipit cupiditate dolorem est distinctio</h4> 
+        <h4 class="description-about">voltatem ipsum.</h4>
+      </div>
+      <div class="description save-big">
+        <img src="saving.png" alt="icon 1" class="description-image save-big-image">
+        <h3 class="description-name">Save Big</h3>
+        <h4 class="description-about">Suscipit cupiditate dolorem est distinctio</h4> 
+        <h4 class="description-about">voltatem ipsum.</h4>
+      </div>
+    </div>
+    <!-- Top Projects -->
+    <section class="top-projects">
+      <div class="section-header">
+        <h2 class="section-title">Top Projects</h2>
+        <button class="btn-view-all">
+          View All <span class="arrow">&gt;</span>
+        </button>
+      </div>
+      <div class="project-cards-container">
+        <!-- Project Card -->
+        <div class="project-card">
+          <img src="Voora Beckford.jpeg" alt="Voora Beckford" class="project-image">
+          <div class="project-details">
+            <h3 class="project-name">Voora Beckford</h3>
+            <div class="project-location">
+              <span class="location">Location</span>
+              <span class="colon">:</span>
+              <span>Chennai, India</span>
+            </div>
+            <div class="project-price">
+              <span class="price">$1500</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-book">Book</button>
+              <button class="btn-site-visit">Site Visit</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy and change below two as needed -->
+        <div class="project-card">
+          <img src="Voora Beckford.jpeg" alt="Project 2" class="project-image">
+          <div class="project-details">
+            <h3 class="project-name">Voora Beckford</h3>
+            <div class="project-location">
+              <span class="location">Location</span>
+              <span class="colon">:</span>
+              <span>Chennai, India</span>
+            </div>
+            <div class="project-price">
+              <span class="price">$1500</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-book">Book</button>
+              <button class="btn-site-visit">Site Visit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Voora Beckford.jpeg" alt="Project 3" class="project-image">
+          <div class="project-details">
+            <h3 class="project-name">Voora Beckford</h3>
+            <div class="project-location">
+              <span  class="location">Location</span>
+              <span class="colon">:</span>
+              <span>Chennai, India</span>
+            </div>
+            <div class="project-price">
+              <span class="price">$1500</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-book">Book</button>
+              <button class="btn-site-visit">Site Visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="inventory-section">
+      <div class="inventory-bg"></div>
+      <h2 class="inventory-title">Our Inventory</h2>
+      <div class="inventory-box">
+        <div class="inventory-tabs">
+          <button class="tab active">Apartment (853)</button>
+          <button class="tab">Plot (340)</button>
+          <button class="tab">Villa (16)</button>
+          <button class="tab">Shop (12)</button>
+          <button class="tab">Office Spaces (25)</button>
+          <button class="tab">Duplex (2)</button>
+        </div>
+
+        <div class="inventory-grid">
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+          <div class="inventory-card">
+            <span>Project Name</span>
+            <span>$1200</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="inventory-cards-container">
+      <!-- First Box -->
+      <div class="inventory-box">
+        <h2>Lorem Ipsum Consectetur</h2>
+        <div class="inventory-scroll-wrapper">
+        <div class="inventory-content">
+          <div class="column">
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Consectetur</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Loresit Amet Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Consectetur</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Loresit Amet Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+          </div>
+          <div class="column">
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Consectetur</p>
+            <p>Dolor Amet Consectetur</p>
+            <p>Suscipit Consectetur</p>
+            <p>Consectetur Cupiditate</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Consectetur</p>
+            <p>Dolor Amet Consectetur</p>
+            <p>Suscipit Consectetur</p>
+            <p>Consectetur Cupiditate</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Second Box -->
+      <div class="inventory-box">
+        <h2>Lorem Consectetur</h2>
+        <div class="inventory-scroll-wrapper">
+        <div class="inventory-content">
+          <div class="column">
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Consectetur</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Loresit Amet Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Consectetur</p>
+            <p>Lorem Ipsum Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Loresit Amet Consectetur</p>
+            <p>Suscipit Cupiditate</p>
+          </div>
+          <div class="column">
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Consectetur</p>
+            <p>Dolor Amet Consectetur</p>
+            <p>Suscipit Consectetur</p>
+            <p>Consectetur Cupiditate</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Cupiditate</p>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <p>Suscipit Consectetur</p>
+            <p>Dolor Amet Consectetur</p>
+            <p>Suscipit Consectetur</p>
+            <p>Consectetur Cupiditate</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Other Services</h4>
+        <ul>
+          <li>Property Consultant</li>
+          <li>Interior Support</li>
+          <li>Legal Advisory Support</li>
+          <li>Housing Loan Support</li>
+          <li>Property Management Support</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Useful Links</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Ad Space Sales</li>
+          <li>Docs & Guides</li>
+          <li>News & Blogs</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Become</h4>
+        <ul>
+          <li>Brand</li>
+          <li>Channel Partner</li>
+          <li>An Affiliate</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Condition</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>More Links</h4>
+        <ul>
+          <li>Q & A</li>
+          <li>Partner Network</li>
+          <li>Compare Project</li>
+          <li>Chat Room</li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h4>Subscribe To Our Newsletter</h4>
+        <input type="email" placeholder="Enter Your Email" />
+        <button>Subscribe</button>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="footer-bottom">
+      <p>Copyright @ 2023 Property Street. All Right Reserved. Developed By <span>Greenbuds</span></p>
+      <div class="payment-icons">
+        <img src="mastercard-logo.png" alt="Mastercard" />
+        <img src="visa-logo.png" alt="Visa" />
+        <img src="Discover-Card-logo.png" alt="Discover" />
+        <img src="visa-logo.png" alt="Visa" />
+        <img src="rupay-logo.png" alt="RuPay" />
+        <img src="amex.png" alt="AmEx" />
+        <img src="Discover-Card-logo.png" alt="Discover" />
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
