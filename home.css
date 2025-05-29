@@ -1133,12 +1133,11 @@ hr {
     margin-top: 20px;
   }
   
-}
+  .otherservices {
+    margin-right: 900px;
+  }
 
-.otherservices {
-   margin-right: 900px;
-}
-
-.morelinks {
-   margin-right: 900px;
+  .morelinks {
+    margin-right: 900px;
+  }
 }
